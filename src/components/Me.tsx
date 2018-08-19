@@ -14,8 +14,10 @@ class Me extends React.Component<any, any> {
                 <div className="details">
                     <span className="name">Sanchit Gupta</span>
                     <br />
-                    <br />
                     <span className="role">Full Stack Developer</span>
+                    <br />
+                    <br />
+                    <a href="mailto:gupta.sanchit90@gmail.com">gupta.sanchit90@gmail.com</a>
                 </div>
             </div>
         );
