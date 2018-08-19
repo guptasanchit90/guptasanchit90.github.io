@@ -9,5 +9,10 @@ branches:
 before_script:
   - npm install
 
-script:
-  - npm run deploy
+deploy:
+  provider: pages
+  local-dir: build
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: master
