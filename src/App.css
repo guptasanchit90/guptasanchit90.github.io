@@ -1,0 +1,122 @@
+.App {
+}
+
+.content{
+  padding-top: 180px;
+}
+
+.section-right{
+  float: right;
+  width: 20%;
+  height: 100%;
+  text-align: start;
+}
+
+.section-left{
+  float: left;
+  width: 80%;
+  height: 100%;
+  padding-bottom: 16px;
+}
+
+.Header{
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.Project{
+  width: 100%;
+}
+
+.Project .card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: auto;
+  margin-top: 32px;
+  padding: 12px;
+  width: 80%;
+}
+
+.Project .card .title{
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.Project .card .skill{
+  font-style: italic;
+  font-size: large;
+}
+
+.Project .card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.Project-Header{
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.SkillOrTools-Header{
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.SkillOrTools{
+  font-size: large;
+  padding: 8px;
+  margin-top: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.SkillOrTools:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ContactInfo{
+  float: right;
+  width: 20%;
+  height: 100%;
+  text-align: start;
+  margin-right:16px;
+}
+
+.ContactInfo a{
+  color: white;
+}
+
+.Me{
+  float: left;
+  width: 75%;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.Me .name{
+  display: inline;
+  font-size: xx-large;
+}
+
+.Me .role{
+  font-size: large;
+  font-style: italic;
+}
+
+.Me .meImage{
+  border-radius: 50%;
+  float: left;
+  width: 8%;
+}
+
+.Me .details{
+  float: right;
+  width: 89%;
+}
