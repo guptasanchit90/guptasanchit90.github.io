@@ -1,10 +1,3 @@
-.App {
-}
-
-.content{
-  
-}
-
 .section-right{
   float: right;
   padding-left: 15px;
@@ -22,7 +15,15 @@
   height: 100%;
   padding-bottom: 16px;
   padding-top: 180px;
-  background-color: white;
+  margin-left: 8px;
+}
+
+.section-single{
+  height: 100%;
+  padding-bottom: 20px;
+  padding-top: 160px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .Header{
@@ -45,7 +46,6 @@
   margin: auto;
   margin-top: 32px;
   padding: 12px;
-  width: 80%;
 }
 
 .Project .card .title{
@@ -110,6 +110,35 @@
 
 a{
   color: white;
+}
+
+@media only screen and (max-width: 1224px) {
+  .Me{
+    width: 100%;
+    height: 60% !important;
+  }
+
+  .Me .name{
+    font-size: x-large !important;
+  }
+
+  .Me .meImage{
+    width: 20% !important;
+  }
+
+  .Me .details{
+    width: 70% !important;
+  }
+
+  .ContactInfo{
+    width: 100%;
+    height: 40% !important;
+  }
+
+  .social-icon{
+    height: 24px !important;
+    padding: 4px;
+  }
 }
 
 .Me{
@@ -188,7 +217,6 @@ a{
   margin: auto;
   margin-top: 32px;
   padding: 12px;
-  width: 80%;
 }
 
 .Award:hover{

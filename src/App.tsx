@@ -1,5 +1,8 @@
-import * as React from 'react';
 import './App.css';
+
+import * as React from 'react';
+import MediaQuery from 'react-responsive';
+
 import { default as MyComponents } from './components/index';
 import { Constants } from './Constants';
 
@@ -12,15 +15,29 @@ class App extends React.Component {
         <MyComponents.header className="Header" />
 
         <div className="content">
-          <div className="section-left">
-            {this.getProjects()}
-            {this.getAwards()}
-          </div>
+          <MediaQuery minDeviceWidth={1224}>
+            <div className="section-left">
+              {this.getProjects()}
+              {this.getAwards()}
+            </div>
 
-          <div className="section-right">
-            {this.getSkillsAndTools()}
-            {this.getEducation()}
-          </div>
+            <div className="section-right">
+              {this.getSkillsAndTools()}
+              {this.getEducation()}
+            </div>
+          </MediaQuery>
+
+          <MediaQuery maxWidth={1224}>
+            <div className="section-single">
+              {this.getSkillsAndTools()}
+              {this.getEducation()}
+              <br />
+              <br />
+              {this.getProjects()}
+              {this.getAwards()}
+            </div>
+          </MediaQuery>
+
         </div>
       </div>
     );
