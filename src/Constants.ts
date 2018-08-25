@@ -1,4 +1,33 @@
 export const Constants = {
+
+    education: [
+        {
+            description: 'Post Graduation Diploma in Advanced Software Design and Development from Center for Development of Advanced Computing (CDAC) Noida.',
+            duration: 'February 2012 - August 2012',
+            institute: 'C-DAC',
+            location: 'Noida',
+            title: 'Post Graduation Diploma'
+        },
+        {
+            description: 'Bachelor of Technology in Information Technology from Poornima Institute of Engineering and Technology, Jaipur',
+            duration: '2007 - 2011',
+            institute: 'Poornima Institute of Engineering and Technology',
+            location: 'Jaipur',
+            title: 'Bachelor of Technology'
+        },
+        {
+            duration: '2007',
+            institute: 'Ryan International School',
+            location: 'Greater Noida',
+            title: ' Class XII'
+        },
+        {
+            duration: '2005',
+            institute: 'Modern Public School',
+            location: 'Noida',
+            title: 'Class X'
+        }
+    ],
     projects: [
         {
             description: 'An intuitive checkout flow for walk in customers in a large e-commerce retail store in UI. This applications provides ability for customers to scan products, swipe credit/debit cards etc. This application is aimed at more tech savvy and regular customers who wish to avoid long queues for payment. With this application customers can easily pick up items and perform the complete checkout process without any intervention and leave the store without ever talking to any in-store associate.',
@@ -149,4 +178,5 @@ export const Constants = {
         { iconName: 'devicon-amazonwebservices-original', title: 'Amazon Web Services' },
         { iconName: '', title: 'Microsoft Azure' },
     ]
+
 } 

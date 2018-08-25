@@ -2,21 +2,27 @@
 }
 
 .content{
-  padding-top: 180px;
+  
 }
 
 .section-right{
   float: right;
-  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 25%;
   height: 100%;
   text-align: start;
+  padding-top: 180px;
+  padding-bottom: 16px;
 }
 
 .section-left{
   float: left;
-  width: 80%;
+  width: 70%;
   height: 100%;
   padding-bottom: 16px;
+  padding-top: 180px;
+  background-color: white;
 }
 
 .Header{
@@ -59,17 +65,22 @@
   color: grey;
 }
 
-.Project-Header{
+.Section-Title{
   font-size: x-large;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.Section-Title.ProjectTitle{
   text-align: center;
 }
 
-.SkillOrTools-Header{
-  font-size: x-large;
-  text-transform: uppercase;
-  font-weight: 600;
+.Section-Title.EducationTitle{
+  text-align: center;
+}
+
+.Section-Title.SkillOrToolsTitle{
+  text-align: center;
 }
 
 .SkillOrTools{
@@ -128,4 +139,40 @@ a{
 .social-icon{
   height: 48px;
   padding: 4px;
+}
+
+.Education .card{
+  margin-top: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 12px;
+}
+
+.Education .card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.Education .card .institute{
+  font-weight: 700;
+  font-size: large;
+}
+
+.Education .card .location{
+  font-size: large;
+  font-weight: 600;
+}
+
+.Education .card .title{
+  font-size: large;
+  font-style: italic;
+}
+
+.Education .card .duration{
+  font-size: normal;
+  font-style: normal;
+}
+
+.Education .card .description{
+  font-size: small;
+  font-style: oblique;
 }
