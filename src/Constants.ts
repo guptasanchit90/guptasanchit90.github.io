@@ -1,5 +1,31 @@
 export const Constants = {
-
+    awards: [
+        {
+            duration: 'Q4-FY 2018',
+            title: 'Excellence Award'
+        },
+        {
+            duration: 'Q3-FY 2016',
+            title: 'Engineering Excellence Award'
+        },
+        {
+            duration: 'Q3-FY 2016',
+            title: 'Quarterly Team Award'
+        },
+        {
+            duration: 'February 22, 2016',
+            link: 'https://www.globallogic.com/news/globallogic-india-successfully-concludes-30hacks-in-association-with-nasscom/',
+            title: 'NASSCOM (Hackathon) - 1st prize'
+        },
+        {
+            duration: 'Q2-2015',
+            title: 'Quarterly Team Award'
+        },
+        {
+            duration: 'Q4-2014',
+            title: 'Quarterly Team Award'
+        }
+    ],
     education: [
         {
             description: 'Post Graduation Diploma in Advanced Software Design and Development from Center for Development of Advanced Computing (CDAC) Noida.',
