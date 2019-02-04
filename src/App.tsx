@@ -93,7 +93,7 @@ class App extends React.Component {
     skillRows.push(<div className="Section-Title SkillOrToolsTitle">Skills</div>);
     Constants.skills.map((data, i) => {
       const id = "Skill-" + i;
-      skillRows.push(<MyComponents.skill key={id} className="SkillOrTools" iconName={data.iconName} title={data.title} />);
+      skillRows.push(<MyComponents.skill key={id} className="SkillOrTools" isPrimary={data.isPrimary} iconName={data.iconName} title={data.title} />);
     });
 
     skillRows.push(<br />);

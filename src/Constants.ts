@@ -143,21 +143,22 @@ export const Constants = {
         }
     ],
     skills: [
-        { iconName: 'devicon-angularjs-plain', title: 'Angular' },
+        { iconName: 'devicon-angularjs-plain', title: 'Angular 4+', isPrimary: true },
         { iconName: '', title: 'Ionic' },
-        { iconName: 'devicon-typescript-plain', title: 'Typescript' },
-        { iconName: '', title: 'RxJS' },
-        { iconName: '', title: 'Redux (NGRX)' },
-        { iconName: 'devicon-react-plain', title: 'React' },
+        { iconName: 'devicon-typescript-plain', title: 'Typescript', isPrimary: true },
+        { iconName: '', title: 'RxJS', isPrimary: true },
+        { iconName: '', title: 'Redux design pattern' },
+        { iconName: 'devicon-react-plain', title: 'React JS' },
         { iconName: 'devicon-jasmine-plain', title: 'Jasmine' },
         { iconName: '', title: 'Karma' },
+        { iconName: '', title: 'Jest', isPrimary: true },
 
-        { iconName: 'devicon-nodejs-plain', title: 'Node.JS' },
+        { iconName: 'devicon-nodejs-plain', title: 'Node.JS', isPrimary: true },
         { iconName: '', title: 'Firebase' },
         { iconName: 'devicon-express-original', title: 'ExpressJS' },
         { iconName: '', title: 'Socket.IO' },
 
-        { iconName: '', title: 'Cordova' },
+        { iconName: '', title: 'Cordova', isPrimary: true },
         { iconName: '', title: 'Mobile First platform (Work-light)' },
 
         { iconName: 'devicon-mongodb-plain', title: 'MongoDB' },

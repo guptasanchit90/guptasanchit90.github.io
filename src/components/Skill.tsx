@@ -10,7 +10,7 @@ class Skill extends React.Component<any, any> {
 
     public render() {
         return (
-            <div className={this.props.className}>
+            <div className={this.props.className} style={{ background: this.props.isPrimary ? "lightgrey" : "" }}>
                 <i className={`${this.props.iconName} colored`} /> {this.props.title}
             </div>
         );
