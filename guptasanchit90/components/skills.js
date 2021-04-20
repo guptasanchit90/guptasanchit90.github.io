@@ -6,20 +6,24 @@ import Col from 'react-bootstrap/Col';
 
 const skills = [
     {
-        category: "Fornt-End Basics",
-        technologyAndTools: ['Javascript', 'HTML', 'CSS']
+        category: "Fornt End",
+        technologyAndTools: ['Javascript','React', 'Angular', 'HTML', 'CSS' ]
     },
     {
-        category: "Fornt-End Frameworks",
-        technologyAndTools: ['React', 'Angular']
-    },
-    {
-        category: "Fornt-End Styles",
-        technologyAndTools: ['Bootstrap', 'Materiall UI']
-    },
-    {
-        category: "Back-End",
+        category: "Back End",
         technologyAndTools: ['Node JS', 'Java', 'PHP']
+    },
+    {
+        category: "Database",
+        technologyAndTools: ['MySQL', 'MongoDB', 'Firebase', 'Firestore']
+    },
+    {
+        category: "Version Control",
+        technologyAndTools: ['GIT', 'Subversion']
+    },
+    {
+        category: "Project Management",
+        technologyAndTools: ['JIRA', 'Gitlab', 'Trello', 'Aha', 'Confluence']
     }
 ]
 

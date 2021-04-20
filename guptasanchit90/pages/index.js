@@ -8,17 +8,22 @@ import Skills from '../components/skills';
 
 export default function Home() {
   return (
-    <div>
+    <Container className="p-0" fluid>
       <Head>
         <title>Sanchit Gupta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ zIndex: 999, backgroundColor: "#2c3e50" }}>
+      <Navbar collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ zIndex: 999, background: `linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  )` }}>
       <Navbar.Brand href="#home">Sanchit Gupta</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" style={{ paddingLeft: "10vw" }}>
+          <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#home">HOME</Nav.Link>
             <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#experience">EXPERIENCE</Nav.Link>
             <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#skills">SKILLS</Nav.Link>
             <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#projects">PROJECTS</Nav.Link>
@@ -28,9 +33,11 @@ export default function Home() {
 
       </Navbar>
 
-      <Container >
+      <Container className="p-0" fluid >
 
-        <WavesComponent />
+<div id="home">
+<WavesComponent />
+</div>
 
           <Skills />
 
@@ -38,6 +45,6 @@ export default function Home() {
 
       </Container>
 
-    </div>
+    </Container>
   )
 }

@@ -155,15 +155,16 @@ const projects = [
 
 export default function Projects() {
     return (
-        <Container id="projects" style={{ marginBottom: "100px" }}>
+        <Container id="projects" style={{ marginBottom: "100px", overflow:"hidden" }}>
+            <h2 style={{textAlign:"center"}}>PROJECTS</h2>
             <Row>
                 {projects.map((project, i) => {
                     const isOdd = i % 2 !== 0;
                     return (
-                        <Col className="card-hover my-4" md={12} lg={12} xl={6}>
-                            <FadeInSection style={{ height:"100%"}} side={!isOdd ? "left" : "right"}>
+                        <Col className="card-hover my-4" md={12} lg={12}>
+                            <FadeInSection style={{ height:"100%"}} side={"bottom"}>
 
-                                <Card style={{  height:"100%", background: !isOdd ? "linear-gradient(90deg, rgba(52,73,94,0.95) 0%, rgba(44,62,80,1) 100%)" : "linear-gradient(270deg, rgba(52,73,94,0.95) 0%, rgba(44,62,80,1) 100%)", color:"#ecf0f1"}} >
+                                <Card style={{  height:"100%", background:  "linear-gradient(60deg, rgba(84, 58, 183, 1) 20%, rgba(0, 172, 193, 1) 140%)" , color:"#ecf0f1"}} >
                                     {(!isOdd && project.image) && <Card.Img variant="bottom" style={project.image_style} className={[styles.project_card_image].join(" ")} src={project.image} />}
 
                                     <Card.Header>
