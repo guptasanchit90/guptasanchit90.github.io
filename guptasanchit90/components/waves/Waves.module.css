@@ -10,12 +10,21 @@
 }
 
 .innerHeader {
-  height:25vh;
-  width:100%;
+  height: 25vh;
+  width: 100%;
   margin: 0;
   padding: 0;
+  z-index: 99;
 }
 
+.title {
+  z-index: 100;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 120px;
+}
 
 .waves {
   position: relative;

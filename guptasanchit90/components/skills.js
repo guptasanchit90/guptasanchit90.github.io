@@ -33,12 +33,12 @@ export default function Skills() {
             <Row>
                 {skills.map((skill, i) => {
                     return (
-                        <Col>
+                        <Col key={i}>
                             <Card style={{ width: '18rem', margin:"12px" }}>
                                 <Card.Header>{skill.category}</Card.Header>
                                 <ListGroup variant="flush">
-                                    {skill.technologyAndTools.map(item => {
-                                        return <ListGroup.Item>{item}</ListGroup.Item>
+                                    {skill.technologyAndTools.map((item, i) => {
+                                        return <ListGroup.Item key={i}>{item}</ListGroup.Item>
                                     })}
                                 </ListGroup>
                                 <Card.Footer className="text-muted">

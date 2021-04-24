@@ -1,4 +1,4 @@
-import { Row, Container, Col, Card } from 'react-bootstrap';
+import { Row, Container, Col, Card, Badge } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
 import FadeInSection from './fade-in-section/FadeInSection';
 
@@ -6,9 +6,15 @@ const projects = [
     {
         category: "Enterprise Application",
         title: "Healthcare Data Registry",
-        description: `A web application built on FHIR data using ReactJS, GraphQL. This application will help Providers to view, manage and validate data for in an intutive way from multiple sources.`,
+        description: `A web application built for CRUD operations on FHIR, this app is built for operators to manage and monitor data about Organizations and Practioners. 
+        <br/>- Implemented with security and role based access in mind.
+        <br/>- OAuth2 Based Authetication
+        <br/>- Support CRUD operations for different FHIR resources
+        <br/>- Multiple Language Support`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Lead Developer",
+        technologies:['ReactJS', 'GraphQL', 'NodeJS', 'Docker', 'Kubernetes', 'FHIR', 'SmileCDR']
     },
     {
         category: "Enterprise Application",
@@ -21,15 +27,20 @@ const projects = [
         ElasticSearch, Prometheus etc. Deployments are done on AWS
         using Kubernetes with Docker Images.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Technical Lead",
+        technologies:['ReactJS', 'NodeJS', 'Docker', 'Kubernetes', 'Drupal','Kafka','Keycloak','Nginx', 'Envoy','Grafana','Kibana','FluentD','Prometheous', 'Amazon Web Service', 'Socket.io']
     },
     {
         category: "Utility",
-        title: "Telus Design System",
+        title: "Telus Design System - VS Code Extension",
         description: `Worked on building Visual Code extension to make developer’s
         happier while working with Telus Design System (TDS).`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Solo Developer",
+        technologies:['NodeJS', 'Visual studio Code extension']
+
     },
     {
         category: "Point Of Sale Application",
@@ -42,7 +53,9 @@ const projects = [
         customers can easily pick up items and perform the complete
         checkout process.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Technical Lead",
+        technologies:['NodeJS', 'Angular','Typescript', 'Electron JS', 'Socket.io', 'Redux - NGRX']
     },
     {
         category: "Enterprise Application",
@@ -54,7 +67,10 @@ const projects = [
         dynamic queries using Handlebars and work as a proxy between
         different legacy services written in Java.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Lead Developer",
+        technologies:['NodeJS', 'Angular','Typescript', 'Electron JS', 'Socket.io', 'Docker', 'Handlebars', 'MySQL', 'Hive', 'Java Spring', 'NGINX', 'Docker']
+
     },
     {
         category: "Enterprise Library",
@@ -65,7 +81,10 @@ const projects = [
         provides clean and standardised api. This also exposes hooks for
         integrating custom functionalities.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Lead Developer",
+        technologies:['Typescript', 'CryptoJS']
+
     },
     {
         category: "Enterprise Module",
@@ -76,18 +95,9 @@ const projects = [
             cordova container leveraging customer information which is
             already present on the device.`,
         image: "",
-        image_style: {}
-    },
-    {
-        category: "Point Of Sale Application",
-        title: "Point of Sale application for IPad’s",
-        description: `A complete checkout flow starting from scanning, add offers etc to
-        checkout and printing receipts over a Mobile iPad device. This
-        application is used during rush in-stores where store associates
-        can help customers generate complete order and take payments
-        over a mobile device.`,
-        image: "",
-        image_style: {}
+        image_style: {},
+        role:"Lead Developer",
+        technologies:['Javascript', 'Cordova', 'iOS - Objective C', 'Android - Java']
     },
     {
         category: "Point Of Sale Application",
@@ -98,7 +108,9 @@ const projects = [
         can help customers generate complete order and take payments
         over a mobile device.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Lead Developer",
+        technologies:['Ionic', 'Angular', 'Typescript', 'iOS - Objective C', 'Cordova']
     },
     {
         category: "Utility",
@@ -112,7 +124,9 @@ const projects = [
         created Android SDK to help other team members integrate this
         tool.`,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Solo Developer",
+        technologies:['NodeJS', 'Angular', 'ExpressJS', 'MongoBD']
     },
     {
         category: "Mobile Commerce",
@@ -121,21 +135,27 @@ const projects = [
         Customers find and purchase Products from their hand-held Android devices, also
         providing Location based services, providing special Offers. `,
         image: "",
-        image_style: {}
+        image_style: {},
+        role:"Developer",
+        technologies:['Android - Java', 'Cordova - Worklight', 'Jenkins', 'Gradle', 'SonarQube']
     },
     {
         category: "Mobile Commerce",
         title: "Food & Drinks App",
         description: `Customer facing e-commerce app for one of the leading retail chain in US. This application has features like visual search, voice search, wallet, loyalty, recommendations etc`,
         image: "",//"project_food_app.svg",
-        image_style: {}
+        image_style: {},
+        role:"Solo Developer",
+        technologies:['Android - Java']
     },
     {
         category: "Mobille Commerce",
         title: "Gift App",
         description: `Customer facing e-commerce app for one of the leading retail chain in US. This application has features like visual search, voice search, wallet, loyalty, recommendations etc`,
         image: "",//"project_gift_app.svg",
-        image_style: {}
+        image_style: {},
+        role:"Solo Developer",
+        technologies:['Android - Java']
     },
     {
         category: "Utility",
@@ -143,6 +163,8 @@ const projects = [
         description: `A library to provide a lot of SVG icons to be used in Ionic and Angular applications`,
         image: "",//"project_icons.svg",
         image_style: {},//{ transform: "translate(-40%, 0)" }
+        role:"Solo Developer",
+        technologies:['Ionic', 'Javscript', 'Travis', 'Netlify']
     },
     {
         category: "Utility",
@@ -150,6 +172,8 @@ const projects = [
         description: `An application to view and manage few things on android device from a web dashboard which is served from within the device. Features include - managing messages, call logs, contacts, battery information, device information, taking notes etc.`,
         image: "",//"project_mobile_dashboard.svg",
         image_style: {},//{ transform: "translate(40%, 0)" }
+        role:"Solo Developer",
+        technologies:['Android - Java', 'Angular JS', 'NodeJS', 'Electron JS', 'Socket.io']
     }
 ]
 
@@ -173,12 +197,21 @@ export default function Projects() {
                                     </Card.Header>
 
                                     <Card.Body style={{ textAlign: "justify", width: !project.image ? "100%" : "calc(100% - 512px)", margin: 0, right: !isOdd ? 0 : "unset" }}>
-                                        <Card.Text style={{ fontWeight: 400 }}>
-                                            {project.description}
+                                        <Card.Text dangerouslySetInnerHTML={{ __html: project.description }} style={{ fontWeight: 400 }}>
                                         </Card.Text>
+                                        
+                                        {/* <Badge>{project.role}</Badge>  */}
+
                                     </Card.Body>
 
                                     {(isOdd && project.image) && <Card.Img variant="bottom" style={project.image_style} className={[styles.project_card_image, styles.project_card_image_rt].join(" ")} src={project.image} />}
+                                
+                                <Card.Footer>
+                                    
+                                    {project.technologies && project.technologies.map(tech=>{
+                                        return <Badge>{tech}</Badge> 
+                                    })}
+                                </Card.Footer>
                                 </Card>
                             </FadeInSection>
                         </Col>

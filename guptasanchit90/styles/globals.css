@@ -1,4 +1,4 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 html,
 body {
@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -18,22 +18,21 @@ a {
   box-sizing: border-box;
 }
 
-.card-hover:hover{
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+.card-hover:hover {
+  -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
 
   -webkit-transition: transform 0.65s ease-in-out;
-  -moz-transition:transform 0.65s ease-in-out;
-  -ms-transition:transform 0.65s ease-in-out;
-
+  -moz-transition: transform 0.65s ease-in-out;
+  -ms-transition: transform 0.65s ease-in-out;
 }
 
-.container{
-    overflow-x: hidden;
+.container {
+  overflow-x: hidden;
 }
 
 #projects {

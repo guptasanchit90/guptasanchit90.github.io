@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import WavesComponent from '../components/waves/waves';
+import WavesComponent from '../components/waves/Waves';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
 
