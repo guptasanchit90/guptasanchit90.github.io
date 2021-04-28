@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 import styles from './Waves.module.css';
 
 const WavesComponent = () => {
@@ -10,6 +11,7 @@ const WavesComponent = () => {
         <div className={styles.header}>
             <div className={styles.innerHeader}></div>
             <div className={styles.title}>
+                <h2>I am,</h2>
                 <h1>Sanchit Gupta</h1><br />
                 <h3>Full Stack Developer</h3>
             </div>

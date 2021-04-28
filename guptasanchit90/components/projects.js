@@ -208,8 +208,8 @@ export default function Projects() {
                                 
                                 <Card.Footer>
                                     
-                                    {project.technologies && project.technologies.map(tech=>{
-                                        return <Badge>{tech}</Badge> 
+                                    {project.technologies && project.technologies.map((tech, i)=>{
+                                        return <Badge key={`${tech}_${i}`}>{tech}</Badge> 
                                     })}
                                 </Card.Footer>
                                 </Card>
