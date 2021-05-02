@@ -1,5 +1,4 @@
 import { Row, Container, Col, Card, Badge } from 'react-bootstrap';
-import styles from '../styles/Home.module.css';
 import FadeInSection from './fade-in-section/FadeInSection';
 
 const projects = [

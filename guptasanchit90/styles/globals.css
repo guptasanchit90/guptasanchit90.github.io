@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./vars.css";
 
 html,
 body {
@@ -18,6 +19,73 @@ a {
   box-sizing: border-box;
 }
 
+#header {
+  position: relative;
+  text-align: left;
+  background: var(--gradient-bg);
+  color: white;
+}
+
+#header .title {
+  height: calc(var(--header-height-raw) * 2);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 120px;
+}
+
+#header .quotes {
+  margin: "auto";
+  text-align: "center";
+}
+
+#header .waves {
+  position: relative;
+  width: 100%;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+#header .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+#header .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+#header .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+#header .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+#header .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+
+  #header .quotes {
+    margin: "unset";
+    text-align: "left";
+  }
+}
+
 .card-hover:hover {
   -moz-transform: scale(1.01);
   -webkit-transform: scale(1.01);
@@ -35,6 +103,35 @@ a {
   overflow-x: hidden;
 }
 
-#projects {
-  scroll-padding: 1rem 0 0 0;
+#content-section {
+  transform: translateY(calc(0rem - var(--header-height-raw)));
+}
+
+@media (max-width: 768px) {
+  #content-section {
+    transform: translateY(calc(2rem - (var(--header-height-raw))));
+  }
+}
+
+.project-container {
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+#skills {
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.80) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+#skills .card {
+  border: unset;
+}
+
+#skills .card-title {
+  text-align: center;
 }
