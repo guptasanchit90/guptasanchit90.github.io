@@ -16,7 +16,7 @@ jobs:
           npm install
           npm run build
           npm run export
-          cp .nojekyll .nojekyll
+          cp .nojekyll ./out/.nojekyll
       - name: Deploy �
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
