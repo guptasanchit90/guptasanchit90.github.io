@@ -16,9 +16,11 @@ jobs:
           npm install
           npm run build
           npm run export
+          cp .nojekyll .nojekyll
       - name: Deploy �
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master
           FOLDER: out
+          CLEAN: true
