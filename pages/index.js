@@ -5,6 +5,8 @@ import Projects from '../components/projects';
 import Skills from '../components/skills';
 import NavBar from '../components/NavBar';
 import { useEffect, useState } from 'react';
+import SocialCard from '../components/social-card';
+import ContactUs from '../components/contact-us';
 
 export default function Home() {
   const [skillHeight, setSkillHeight] = useState(0);
@@ -23,6 +25,7 @@ export default function Home() {
       <Head>
         <title>Sanchit Gupta</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" />
       </Head>
 
       <NavBar />
@@ -31,10 +34,15 @@ export default function Home() {
 
         <WavesComponent />
 
+        {/* <SocialCard /> */}
+
         <div id="content-section">
           <Skills />
 
           <Projects />
+
+          {/* <ContactUs /> */}
+          <SocialCard />
         </div>
 
       </Container>

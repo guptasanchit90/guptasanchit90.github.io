@@ -10,10 +10,10 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
-                    <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#home">HOME</Nav.Link>
-                    <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#skills">SKILLS</Nav.Link>
-                    <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#projects">PROJECTS</Nav.Link>
-                    <Nav.Link style={{ paddingLeft: "5vw", color: "#ecf0f1" }} href="#contact-me">CONTACT ME</Nav.Link>
+                    <Nav.Link className="px-4" style={{ color: "#ecf0f1" }} href="#header">HOME</Nav.Link>
+                    <Nav.Link className="px-4" style={{ color: "#ecf0f1" }} href="#skills">SKILLS</Nav.Link>
+                    <Nav.Link className="px-4" style={{ color: "#ecf0f1" }} href="#projects">PROJECTS</Nav.Link>
+                    <Nav.Link className="px-4" style={{ color: "#ecf0f1" }} href="#social">FIND ME</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
 
