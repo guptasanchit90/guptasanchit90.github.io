@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const WavesComponent = () => {
     const subTitles = [
@@ -25,7 +25,7 @@ const WavesComponent = () => {
     return (
         <div id={"header"}>
 
-            <div className={"title"}>
+            <Container className={"title"}>
                 <Row>
                     <Col md={8}>
                         <h2>I am,</h2>
@@ -36,9 +36,9 @@ const WavesComponent = () => {
                     </Col>
                 </Row>
                 
-            </div>
+            </Container>
 
-            <div>
+            <Container className="p-0" fluid>
                 <svg className={"waves"} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
                     <defs>
@@ -51,7 +51,7 @@ const WavesComponent = () => {
                         <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
                     </g>
                 </svg>
-            </div>
+            </Container>
 
         </div>
     )

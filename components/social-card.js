@@ -15,6 +15,9 @@ const SocialCard = ({ type }) => {
             <Col lg={4} md={6} sm={8}>
                 <GitHubProfileBadge />
             </Col>
+            <Col lg={4} md={6} sm={8}>
+                <LinkedinProfileBadge />
+            </Col>
         </Row>
     </Container>
 
